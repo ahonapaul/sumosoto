@@ -1,0 +1,205 @@
+@font-face {
+    font-family: pixel;
+    src: url(NeuePixelSans.ttf);
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: pixel;
+}
+
+@media only screen and (min-width: 768px) {
+
+.logo{
+    background-color: #0c306b;
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+}
+
+.title{
+    font-size: 300px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 100px;
+    animation: color-change 5s infinite;
+    z-index: 3;
+}
+
+.nav{
+    margin-top: 60vh;
+    height: 200vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.footer{
+    width: 100vw;
+    height: 250px;
+    margin-top: 100px;
+    background-color: #0c306b;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+button{
+    font-family: pixel;
+    font-size: 30px;
+    color: #0c306b;
+    height: 80px;
+    width: 200px;
+    margin: 50px;
+    position: sticky;
+    top: 190px;
+    bottom:0;
+    cursor: pointer;
+    z-index: 2;
+    border: 2px solid #0c306b;
+    box-shadow: 0 9px #999;
+}
+
+button:hover{
+    background-color: #bfbfbf;
+}
+
+button:active{
+    background-color: #bfbfbf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#submit{
+    height: 50px;
+    width: 120px;
+}
+
+form{
+    color:white;
+}
+
+.comingsoon{
+/* change soon after update */
+    font-size: 100px;
+    color: #f051ab;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    width: 50vw;
+    height: 35vh;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+    margin-left: 15vw;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: #f051ab;
+  font-family: pixel;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+.desc{
+    color: white;
+    margin: 80px;
+    font-size: 20px;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.image{
+    margin: 50px;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.mainimg{
+    position: relative;
+}
+
+.mainimg:hover .image{
+    opacity: 0.3;
+}
+
+.mainimg:hover .middle{
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+h2{
+    color: white;
+    font-size: 50px;
+    font-family: pixel;
+}
+
+}
+#links, #members, #socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: #f051ab;
+}
+
+@keyframes color-change {
+    0% {color : #ff584d;}
+    20% {color: #ed7e0e;}
+    35% {color : #ffde73;}
+    50% {color : #64f599;}
+    60% {color: #386de0;}
+    75% {color : #ac35db;}
+    100% {color : #f051ab;}
+}
